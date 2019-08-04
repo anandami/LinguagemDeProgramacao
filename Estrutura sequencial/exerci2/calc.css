@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+p {
+	text-align: justify;
+    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    color: black;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20pt;
+	color:  crimson;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	
+}
+
+ h2 {
+	font-family: Arial, Helvetica, sans-serif;
+    color: #410404;
+    text-shadow: 1px 1px 1px black;
+	
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    color: crimson;
+    text-shadow: 1px 1px 1px black;
+    background-color: #dda6a6;
+        
+}
+
+body {
+    background: url("aurora.jpg") no-repeat;
+    background-size:100% auto;
+    
+
+         
+}

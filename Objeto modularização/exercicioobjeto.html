@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicios de modularização - OBJETO</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="_css/materialize.min.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+</head>
+	<body>
+		<!-- Exercicio 2 -->
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card blue darken-1">
+					<div class="card-content white-text">
+						<span class="card-title">Exercício 2</span>
+						<p>Informe o salário <input type="number" id="salario"></p>
+						<p>Informe a idade <input type="number" id="idade"></p>
+						<p>Informe o número de filhos <input type="number" id="filho"></p>
+						<!--names iguais para que sejam mutuamente exclusivos -->
+							<form>
+								<p>
+									<label>
+										<input type="radio" name="sexo" id="masculino"/>
+										<span>Masculino</span>
+									</label>
+								</p>
+								<p>
+									<label>
+										<input type="radio" name="sexo" id="feminino"/>
+										<span>Feminino</span>
+									</label>
+								</p>
+							</form>
+							<div class="card-action">
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio2()">CADASTRA </a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio2sal()">CALCULE A MEDIA SALARIAL</a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio2filho()">CALCULE A MEDIA DE FILHOS</a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio2maiorsal()">MAIOR SALÁRIO</a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio2sal1000()">SALARIO FEMININO</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Exercicio 3 -->
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card blue darken-1">
+					<div class="card-content white-text">
+						<span class="card-title">Exercício 3</span>
+						<p>Foi realizada uma pesquisa sobre algumas características físicas de 50 habitantes. Preencha os seguintes dados:</p>
+						<p>Altura (em centímetros) <input type="number" id="altura3"></p>
+						<p>Idade <input type="number" id="idade3"></p>
+						<p>Sexo</p>
+						<!--names iguais para que sejam mutuamente exclusivos -->
+						<form>
+							<p>
+								<label>
+									<input type="radio" name="sexo" id="masculino3"/>
+									<span class="card-content white-text">Masculino</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="radio" name="sexo" id="feminino3"/>
+									<span class="card-content white-text">Feminino</span>
+								</label>
+							</p>
+						
+							<br>
+						<p>Cor dos olhos</p>
+							<p>
+								<label>
+									<input type="radio" name="olhos" id="azul"/>
+									<span class="card-content white-text">Azuis</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="radio" name="olhos" id="verde"/>
+									<span class="card-content white-text">Verdes</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="radio" name="olhos" id="castanho"/>
+									<span class="card-content white-text">Castanhos</span>
+								</label>
+							</p>
+						</form>
+							<div class="card-action">
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio3()">CADASTRAR CIDADÃO</a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio3_1()">Caso 1</a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio3_2()">Caso 2</a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio3_3()">Caso 3</a>
+								</p>
+								<br>
+								<p>
+									<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio3_4()">Caso 4</a>
+								</p>
+								<br>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Exercicio 4 -->
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card blue darken-1">
+					<div class="card-content white-text">
+						<span class="card-title">Exercício 4</span>
+							<p>Foi realizada uma pesquisa entre 20 habitantes de uma cidade. De cada habitante foram coletados estes dados:</p>
+							<p>Idade <input type="number" id="idade4"></p>
+							<p>Renda Familiar <input type="number" id="renda4"></p>
+							<p>Número de filhos <input type="number" id="filhos4"></p>
+							<p>Sexo</p>
+							<!--names iguais para que sejam mutuamente exclusivos -->
+							<form>
+								<p>
+									<label>
+										<input type="radio" name="sexo4" id="masculino4"/>
+										<span class="card-content white-text">Masculino</span>
+									</label>
+								</p>
+								<p>
+									<label>
+										<input type="radio" name="sexo4" id="feminino4"/>
+										<span class="card-content white-text">Feminino</span>
+									</label>
+								</p>
+							
+							</form>
+						<p>Faça um programa que leia esses dados, armazenando-os em um vetor, calcule e moste a media de salário entre os habitantes, a menor e a maior idade do grupo e a quantidade de mulherrs com mais de doisu filhos e renda familiar inferior a R$600,00</p>	
+						<div class="card-action">
+							<p>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio4_0()">CADASTRAR CIDADÃO</a>
+							</p>
+							</br>
+							<p>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio4_1()">EXECUTAR</a>
+							</p>
+																	
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card blue darken-1">
+					<div class="card-content white-text">
+						<span class="card-title">Exercício 5</span>
+						<p>Faça um programa que leia um código, a descrição, o valor unitário e a quantidade em estoque dos 50 produtos comercializados por uma papelaria. Essas informações devem ser armazenadas em um registro do tipo vetor em ordem crescente de código.</p>
+						<p>Código <input type="number" id="codigo"></p>
+						<p>Descrição <input type="text" id="desc"></p>
+						<p>Valor unitário <input type="number" id="valorunit"></p>
+						<p>Quantidade em estoque <input type="number" id="quant_estoque"></p>
+						
+						<div class="card-action">
+							<p>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio5()">CADASTRAR PRODUTO</a>
+							</p>
+								</br>
+							<p>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio5_0()">ORDENAR O VETOR</a>
+							</p>
+								</br>
+							<p>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="mostra()">MOSTRA O VETOR</a>
+							</p>
+							</br>
+							
+							<p> Realizar uma rotina que permita alterar a descrição, o valor unitário e a quantidade em estoque de determinado produto que deverá ser localizado por meio da informação de seu código. </br>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio5_1()">CASO 1 </a>
+							</p>
+
+							<p> Realizar uma rotina que mostre todos os produtos cuja descrição comece com determinada letra (informada pelo usuário) </br>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio5_2()"> CASO 2</a>
+							</p>
+							<p>Mostrar todos os produtos com quantidade em estoque inferior a 5 unidades </br>
+								<a class="waves-effect waves-light btn blue darken-4" onclick="exercicio5_3()">CASO 3</a>
+							</p>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+	
+
+	<!-- Javascript Reference -->
+		    <script type="text/javascript" src="_js/jquery-3.3.1.min.js"></script>
+		    <script type="text/javascript" src="_js/materialize.min.js"></script>
+		    
+		    
+		    <!-- -->
+	</body>
+</html>

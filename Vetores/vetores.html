@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="_css/materialize.min.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <title> Exercícios de vetores</title>
+    </head>
+    <body>
+	<div class="container">
+    	<h1 class="flow-text">Linguagem de Programação</h1>
+    	<h2 class="flow-text">Escolha o exercício que deseja exibir</h2>
+	
+    	<!-- Cartão exercício 1 -->
+ 		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 1</span>
+		          <p>Faça um programa que preencha um vetor com seis elementos numéricos inteiros.</p>
+		          <p>Calcule e mostre:</p>
+		          <p>Todos os números pares</p>
+		          <p>A quantidade de números pares</p>
+		          <p>Todos os números ímpares</p>
+		          <p>A quantidade de números ímpares</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio1()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>       
+		
+		<!-- Cartão exercício 2 -->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 2</span>
+		          <p>Faça um programa que preencha um vetor com sete números inteiros.</p>
+		          <p>Calcule e mostre:</p>
+		          <p>Os números múltiplos de 2</p>
+		          <p>Os números múltiplos de 3</p>
+		          <p>Os números múltiplos de 2 e 3</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio2()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>       
+
+		<!-- Cartão exercício 4 -->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 4</span>
+		          <p>Faça um programa que preencha um vetor com quinze elementos inteiros e verifique a existência de elementos iguais a 30, mostrando as posições em que apareçam.</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio4()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>       
+
+		<!-- Cartão exercício 4 EXTRA -->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 4 Extra</span>
+		          <p>O exercício anterior será repetido, desta vez, utilizando a função INDEX.</p>
+		          <p>Explicação: A função "indexOf" determina uma pesquisa no array</p>
+		          <p>Sintaxe: array.indexOf(ElementoDePesquisa)</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio4extra()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>       
+		
+		<!-- Cartão exercício DELETE -->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício - Função Delete</span>
+		          <p>Este exercício tem por objetivo deletar um número no array, onde o usuário digitará um número e escolherá qual remover.</p>
+		          <p>Explicação: A função "indexOf" determina uma pesquisa no array</p>
+		          <p>Sintaxe: array.splice(PosiçãoInicial,QuantidadeDeElementos)</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exerciciodelete()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+
+		<!-- Cartão exercício 5 -->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 5</span>
+		          <p>Uma escola deseja saber se existem alunos cursando, simultaneamente, as disciplinas Lógica e Linguagem de Programação. Coloque os números das matrículas dos alunos que cursam Lógica em um vetor (15 alunos), e os que cursam LP em outro vetor (10 alunos).</p>
+		          <p>Mostre o número das matrículas que aparecem nos dois vetores</p>
+		          
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio5()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+
+		<!-- Cartão exercício 5 usando intersecção-->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 5 Extra</span>
+		          <p>Repetir o exercício anterior utilizando "Index Of".</p>
+		          		          
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio5intersec()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+
+		<!-- Cartão exercício 6 -->
+        <div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 6</span>
+		          <p>Faça um programa que receba o total das vendas de cada vendedor de uma loja e armazene-as como um vetor. Receba também o percentual de comissão a que cada vendedor tem direito e armazene-os em outro vetor. Receba os nomes desses vendedores e armazene-os em um terceiro vetor. Existem apenas dez vendedores na loja.</p>
+		          <p>Calcule e mostre:</p>
+		          <p>O relatório com os nomes dos vendedores e os valores a receber referentes à comissão</p>
+		          <p>O total das vendas de todos os vendedores</p>
+		          <p>O maior valor a receber e o nome de quem receberá</p>
+		          <p>O menor valor a receber e o nome de quem receberá</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio6()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+		
+		<!-- Cartão exercício 14 -->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 14</span>
+		          <p>Faça um programa que receba o nome de duas normas de seis alunos e mostre um relatório com o nome, notas, média e situação</p>
+		          <p>Responda:</p>
+		          <p>Qual foi a média da classe?</p>
+		          <p>Qual o percentual de alunos aprovados?</p>
+		          <p>Qual o percentual de alunos de exame?</p>
+		          <p>Qual o percentual de alunos reprovados?</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio14()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+
+		<!-- Cartão exercício 22 -->
+		<div class="row">
+		    <div class="col s12 m6">
+		      <div class="card light-blue darken-4">
+		        <div class="card-content white-text">
+		          <span class="card-title">Exercício 22</span>
+		          <p>Faça um programa que leia um vetor A de dez posições. Em seguida, compacte o vetor, retirando os valores nulos e negativos. Armazene este resultado no vetor B. Mostre o vetor B</p>
+		          
+		        </div>
+		        <div class="card-action">
+		          <a href="#" onclick="exercicio22()">Executar</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+
+	</div>
+
+
+
+
+        <!-- Javascript Reference -->
+	    <script type="text/javascript" src="_js/jquery-3.3.1.min.js"></script>
+	    <!-- <script type="text/javascript" src="_js/bootstrap.min.js"></script> -->
+	    <script type="text/javascript" src="_js/materialize.min.js"></script>
+	    <script type="text/javascript" src="_js/Chart.min.js"></script>
+	    <script type="text/javascript" src="_js/xlsx.min.js"></script>
+	    <script type="text/javascript" src="funcoes.js"></script>
+	    <!-- -->
+    </body>
+</html>
+

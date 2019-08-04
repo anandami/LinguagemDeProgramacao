@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+h1 {
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+    text-shadow: 1px 1px 1px black;
+}
+p {
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13pt;
+    text-decoration-style: double;
+
+}
+
+html {
+    background-color: #888888;
+
+}
+
+button {
+    font-size: 15pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 1px black;
+    
+
+}

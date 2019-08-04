@@ -1,0 +1,27 @@
+@charset "UTF-8"
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    text-shadow: 1px 1px 1px rgba(00, 50, 98, .5);
+
+
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+body {
+    background: silver;
+}

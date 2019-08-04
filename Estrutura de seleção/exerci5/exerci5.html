@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <script src="exerci5.js"></script>
+        <title>Escolha sua operação</title>
+        <link rel="stylesheet" type="text/css" href="../padrao.css"/>
+    </head>
+    <body>
+        <h2>Escolha uma operação para que seja realizado o cálculo:</h2>
+        <table id="tabelaop">
+            <tr>
+              <th>Escolha do usuário</th>
+              <th>Operações</th> 
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Média entre os números digitados</td>
+            
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Diferença do maior pelo menor</td>
+              
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Produto entre os números digitados</td>
+              
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Divisão do primeiro pelo segundo</td>
+              
+            </tr>
+          </table>
+    <p>Digite o primeiro número <input type="number" id="num1"/></p>
+    <p>Digite o segundo número <input type="number" id="num2"/></p>
+    <p>Digite sua opção de operação<input type="number" id="escolha"/></p>
+    <p><button onclick="calcula()">CALCULE</button></p>
+    <h2 id="resultado"></h2>      
+    </body>
+</html>
