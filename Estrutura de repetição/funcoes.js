@@ -1,19 +1,19 @@
 //Função utilizada no primeiro exercício de estrutura de repetição utilizando variáveis
 function exercicio1A(){
+    
     //declaração de variáveis
     var A, B, C, D;
     var aux, i;
-    var cont = 1;
+    
 
-    while (cont<=5) {
         //Entradas
-        A = prompt("Informe o número");
-        B = prompt("Informe o número");
-        C = prompt("Informe o número");
-        D = prompt("Informe o número");
-        alert("Números escolhidos" + A + "," + B + ","+ C + ","+ D);
+        A = Number(prompt("Informe um número"));
+        B = Number(prompt("Informe um número"));
+        C = Number(prompt("Informe um número"));
+        D = Number(prompt("Informe um número"));
+        alert("Números escolhidos: " + A + ", " + B + ", "+ C + ", "+ D);
         //Processamento
-        for (i=1; i<=3; i++){
+        for (i=1; i<=4; i++){
             if (A>B) {
                 aux = A;
                 A = B;
@@ -31,38 +31,46 @@ function exercicio1A(){
 
             }
         }
-        alert("Números em ordem crescente " + A + "," + B + "," + C +","+ D);
-        alert("Números em ordem decrescente " + D + "," + C + "," + B +","+ A);
-        cont++;
-    }
+    alert("Números em ordem crescente " + A + "," + B + "," + C +","+ D);
+    alert("Números em ordem decrescente " + D + "," + C + "," + B +","+ A);
+    
+    
 }
 
 //Função utilizada no primeiro exercício de estrutura de repetição utilizando vetor
 function exercicio1B(){
     //declaração de variáveis
-    var vet;
+    var vet = [];
     var aux, i;
     var cont = 1;
 
-    while (cont<=5) {
+    while (cont<=3) {
         //Entradas
-        vet.push(prompt("Informe o número"));
-        vet.push(prompt("Informe o número"));
-        vet.push(prompt("Informe o número"));
-        vet.push(prompt("Informe o número"));
+        vet.push(Number(prompt("Informe o número")));
+        vet.push(Number(prompt("Informe o número")));
+        vet.push(Number(prompt("Informe o número")));
+        vet.push(Number(prompt("Informe o número")));
         alert("Números escolhidos" + vet);
         //Processamento
-        for (i=0; i<3; i++){
-            if (vet[i]>vet[i+1]) {
-                aux = vet[i];
-                vet[i] = vet[i+1];
-                vet[i+1] = aux;
+        //faz mais de uma volta p voltar nos valores iniciais do vetor - checagem
+        for (var a = 0; a<=2; a++){
+        //ordena os valores
+            for (i = 0; i <= 3; i ++){
+                if (vet[i]>vet[i+1]) {
+                    aux = vet[i];
+                    vet[i] = vet[i+1];
+                    vet[i+1] = aux;
+                }
             }
-            
-        }
+        }    
+        
+        
         alert("Números em ordem crescente " + vet);
         alert("Números em ordem decrescente " + vet.reverse());
         cont++;
+        //zera o vetor para reiniciar a ordenação
+        //pop = remove o último elemento do vetor e o retorna como resultado
+        //na presente função, só queremos remover os elementos, então não haverá retorno. 
         vet.pop(), vet.pop(), vet.pop(), vet.pop();
     }
 }
@@ -94,6 +102,7 @@ function exercicio3() {
     var idade;
     var i;
     var c1 = 0; c2 = 0; c3 = 0; c4 = 0; c5 = 0;
+    var saida = "";
 
     //processamento
 
@@ -119,13 +128,23 @@ function exercicio3() {
             }
     
     } 
-    var percentc1, percentc5;
-    percentc1 = (c1*100/8)
-    percentc5 = (c5*100/8)
+    //mostra quanto teve em cada faixa
+        saida = saida + "A faixa 1 tem " + c1 + " pessoas; \n";
+        saida = saida + "A faixa 2 tem " + c2 + " pessoas; \n";
+        saida = saida + "A faixa 3 tem " + c3 + " pessoas; \n";
+        saida = saida + "A faixa 4 tem " + c4 + " pessoas; \n";
+        saida = saida + "A faixa 5 tem " + c5 + " pessoas; \n";
+    
+    
+    //Calcula o percentual da primeira e ultima faixa
+        var percentc1, percentc5;
+        percentc1 = (c1*100/8)
+        percentc5 = (c5*100/8)
 
     //saída
-    alert("Ao todo, " + percentc1 + "% das idades informadas correspondem à primeira opção");
-    alert("Ao todo, " + percentc5 + "% das idades informadas correspondem à última opção");    
+        alert(saida)
+        alert("Ao todo, " + percentc1 + "% das idades informadas correspondem à primeira opção");
+        alert("Ao todo, " + percentc5 + "% das idades informadas correspondem à última opção");    
 }
 
 function exercicio7() {
@@ -182,19 +201,19 @@ function exercicio8A(){
             corC = prompt("Digite a cor dos cabelos (L - Louro; P - preto; C - Castanho, R - Ruivo): ");
             //Processamento
                 if ((idade>50) && (peso<60)) {
-                    cont5060 += 1;
+                    cont5060++;
                 }   
                 if (altura<1.5) {
-                    contaltura += 1;
+                    contaltura++;
                     contidade = contidade + idade;
                     
                 }
                 if (corO=="A") {
-                    contcor += 1;
+                    contcor++;
                     
                 }
                 if((corO!=="A") && (corC=="R")){
-                    contAR += 1;
+                    contAR++;
                 }
     pessoas++
     }
@@ -229,19 +248,19 @@ function exercicio8B(){
             corCs.push(prompt("Digite a cor dos cabelos (L - Louro; P - preto; C - Castanho, R - Ruivo): "));
             //Processamento
                 if ((idades[i]>50) && (pesos[i]<60)) {
-                    cont5060 += 1;
+                    cont5060++;
                 }   
                 if (alturas[i]<1.5) {
-                    contaltura += 1;
+                    contaltura++;
                     contidade = contidade + idades[i];
                     
                 }
                 if (corOs[i]=="A") {
-                    contcor += 1;
+                    contcor++;
                     
                 }
-                if((corOs!=="A") && (corCs=="R")){
-                    contAR += 1;
+                if((corOs[i]!=="A") && (corCs[i]=="R")){
+                    contAR++;
                 }
     
     }
